@@ -103,7 +103,7 @@ const Footer1 = (props) => {
               className="text-[15px] text-white-A700"
               size="txtSourceSansProBold15"
             >
-              Oracle Brand - All Rights Reserved
+              Brochure Brand - All Rights Reserved
             </Text>
           </div>
           <Img
