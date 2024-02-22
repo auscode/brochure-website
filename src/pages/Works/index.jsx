@@ -155,6 +155,8 @@ const WorksPage = () => {
                   </div>
                 </div>
               </div>
+              {/* <div className="md:h-[1034px] h-[580px] sm:h-[680px] mt-[100px] w-[95%] relative md:w-full ml-auto">
+                <div className="absolute bg-indigo-800 h-[580px] inset-y-[0] left-[0] my-auto rounded-[30px] w-full"></div> */}
               <div className="md:h-[1034px] h-[580px] sm:h-[680px] mt-[100px] relative w-full">
                 <div className="absolute bg-indigo-800 h-[580px] inset-y-[0] left-[0] my-auto rounded-[30px] w-[95%]"></div>
                 <div className="absolute flex md:flex-col flex-row md:gap-10 items-end justify-between right-[0] top-[7%] w-[92%]">
@@ -219,7 +221,7 @@ const WorksPage = () => {
               </div>
             </div>
           </div>
-          <Footer1 className="bg-gray-801 flex items-center justify-center mt-[110px] rounded-tr-[50px] w-full" />
+          <Footer1 className="bg-gray-801 flex items-center justify-center mt-[110px] rounded-tr-[50px] w-full py-5" />
         </div>
       </div>
     </>

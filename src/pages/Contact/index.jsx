@@ -244,7 +244,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <Footer1 className="bg-gray-801 flex items-center justify-center mt-[108px] rounded-tr-[50px] w-full" />
+          <Footer1 className="bg-gray-801 flex items-center justify-center mt-[108px] rounded-tr-[50px] w-full py-5" />
         </div>
       </div>
     </>

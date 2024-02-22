@@ -305,13 +305,13 @@ const HomepagePage = () => {
                     </Text>
                     <div className="flex md:flex-1 flex-row gap-[9px] items-center justify-between w-[13%] md:w-full">
                       <Button
-                        className="flex items-center justify-center"
+                        className="flex items-center justify-center px-5 rounded-md"
                         shape="square"
                       >
                         <Img src="images/img_group683.svg" alt="group683" />
                       </Button>
                       <Button
-                        className="flex items-center justify-center"
+                        className="flex items-center justify-center px-5 rounded-md"
                         shape="square"
                       >
                         <Img src="images/img_group684.svg" alt="group684" />
@@ -436,7 +436,7 @@ const HomepagePage = () => {
               <Img src="images/img_settings_68X68.svg" alt="settings One" />
             </Button>
           </div>
-          <Footer className="bg-gray-801 flex items-center justify-center mt-[70px] md:px-5 rounded-tr-[50px] w-[91%]" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[70px] md:px-5 rounded-tr-[50px] w-[91%] py-5" />
         </div>
       </div>
     </>

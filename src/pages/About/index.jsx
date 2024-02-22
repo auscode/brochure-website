@@ -354,7 +354,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          <Footer className="bg-gray-801 flex items-center justify-center mt-[120px] rounded-tr-[50px] w-full" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[120px] rounded-tr-[50px] w-full py-5" />
         </div>
       </div>
     </>
