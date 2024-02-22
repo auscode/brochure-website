@@ -431,7 +431,7 @@ const HomepagePage = () => {
             <Button
               className="absolute border-[9px] border-solid border-white-A700 flex h-[68px] items-center justify-center left-[9%] top-[0] w-[68px]"
               shape="circle"
-              size="sm"
+              size="md"
             >
               <Img src="images/img_settings_68X68.svg" alt="settings One" />
             </Button>
