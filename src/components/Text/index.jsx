@@ -33,7 +33,9 @@ const Text = ({ children, className = "", size, as, ...restProps }) => {
 
   return (
     <Component
-      className={`text-left ${className} ${size && sizeClasses[size]}`}
+      className={`text-left cursor-default ${className} ${
+        size && sizeClasses[size]
+      }`}
       {...restProps}
     >
       {children}

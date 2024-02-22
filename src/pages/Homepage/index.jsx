@@ -92,6 +92,7 @@ const HomepagePage = () => {
                     className="cursor-pointer font-bold leading-[normal] min-w-[201px] rounded-[5px] text-base text-center"
                     color="black_900"
                     size="sm"
+                    onClick={() => navigate("/contact")}
                   >
                     Contact Us
                   </Button>
@@ -100,6 +101,7 @@ const HomepagePage = () => {
                     color="black_900"
                     size="sm"
                     variant="outline"
+                    onClick={() => navigate("/about")}
                   >
                     About Us
                   </Button>

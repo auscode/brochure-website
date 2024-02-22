@@ -68,7 +68,7 @@ const ContactPage = () => {
         <div className="flex flex-col items-start justify-start md:px-5 w-[92%] md:w-full">
           <div className="bg-blue-50 flex flex-col items-center justify-start md:ml-[0] ml-[121px] p-[51px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div
-              className="bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[76px] h-[381px] items-center justify-end mb-[91px] mt-[72px] p-[72px] md:px-10 sm:px-5"
+              className="bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[76px] h-[480px] items-center justify-end mb-[65px] mt-[65px] p-[72px] md:px-10 sm:px-5"
               style={{ backgroundImage: "url('images/img_group744.svg')" }}
             >
               <Text
@@ -83,7 +83,7 @@ const ContactPage = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[40.00px] text-center text-gray-700 text-xl w-[86%] sm:w-full"
+                className="leading-[40.00px] text-center text-gray-700 text-xl w-[86%] sm:w-full mb-20"
                 size="txtSourceSansProRegular20Gray700"
               >
                 Stay connected with us, we will help you with your various

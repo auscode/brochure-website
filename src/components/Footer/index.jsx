@@ -1,8 +1,9 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Img, Line, Text } from "components";
 
 const Footer = (props) => {
+  const navigate = useNavigate();
   return (
     <>
       <footer className={props.className}>
@@ -35,6 +36,7 @@ const Footer = (props) => {
                       <Text
                         className="text-lg text-white-A700 tracking-[0.90px]"
                         size="txtSourceSansProSemiBold18"
+                        onClick={() => navigate("/about")}
                       >
                         About
                       </Text>
@@ -47,6 +49,7 @@ const Footer = (props) => {
                       <Text
                         className="text-lg text-white-A700 tracking-[0.90px]"
                         size="txtSourceSansProSemiBold18"
+                        onClick={() => navigate("/works")}
                       >
                         Works
                       </Text>
