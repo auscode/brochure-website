@@ -436,7 +436,7 @@ const HomepagePage = () => {
               <Img src="images/img_settings_68X68.svg" alt="settings One" />
             </Button>
           </div>
-          <Footer className="bg-gray-801 flex items-center justify-center mt-[70px] md:px-5 rounded-tr-[50px] w-full" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[70px] md:px-5 rounded-tr-[50px] w-[91%]" />
         </div>
       </div>
     </>
