@@ -10,7 +10,8 @@ const WorksPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-center justify-start mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-start justify-start mx-auto w-full">
+        {/* <div className="flex flex-col items-center w-full"> */}
         <header className="flex items-center justify-center md:px-5 w-full">
           <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%]">
             <div className="header-row ">
@@ -59,8 +60,9 @@ const WorksPage = () => {
             </div>
           </div>
         </header>
-        <div className="flex flex-col items-start justify-start max-w-[1384px] mx-auto md:px-5 w-full">
-          <div className="bg-green-A100 sm:h-[580px] h-[646px] md:h-[930px] md:ml-[0] ml-[130px] p-1 relative rounded-[90px] w-[86%] md:w-full">
+        {/* </div> */}
+        <div className="flex flex-col items-start justify-start w-[92%] md:px-5 md:w-full">
+          <div className="bg-green-A100 sm:h-[580px] h-[646px] md:h-[930px] md:ml-[0] ml-auto p-1 relative rounded-[90px] w-[86%] md:w-full">
             <div className="flex flex-col md:gap-10 gap-[82px] h-full justify-start m-auto">
               <Text
                 className="md:ml-[0] ml-[285px] sm:text-[40px] md:text-[46px] text-[50px] text-black-900"
@@ -128,7 +130,7 @@ const WorksPage = () => {
               </Text>
             </div>
             <div className="flex flex-col items-start justify-start w-full">
-              <div className="md:h-[496px] h-[527px] relative w-[95%] md:w-full">
+              <div className="md:h-[496px] h-[527px] relative w-[95%] md:w-full ml-auto">
                 <div className="absolute bg-orange-A200 h-[496px] inset-x-[0] mx-auto rounded-[30px] top-[0] w-full"></div>
                 <div className="absolute bottom-[0] h-[482px] right-[0] w-[92%] md:w-full">
                   <Img
@@ -178,7 +180,7 @@ const WorksPage = () => {
                   />
                 </div>
               </div>
-              <div className="bg-red-A200 h-[580px] md:h-[690px] mt-[110px] relative rounded-[30px] w-[95%] md:w-full">
+              <div className="bg-red-A200 h-[580px] md:h-[690px] mt-[110px] relative ml-auto rounded-[30px] w-[95%] md:w-full">
                 <div className="flex flex-col h-full items-start justify-start ml-[101px] my-auto w-[26%]">
                   <div className="flex flex-row gap-4 items-start justify-start w-[58%] md:w-full">
                     <Img
