@@ -11,8 +11,8 @@ const Footer = (props) => {
             <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-[91%] md:w-full">
               <div className="flex flex-row gap-3 items-center justify-start w-[19%] sm:w-full">
                 <Img
-                  className="h-[50px] w-[50px]"
-                  src="defaultNoData.png"
+                  className="h-[50px] w-[50px] object-cover object-left"
+                  src="images/img_group642.svg"
                   alt="grid One"
                 />
                 <Text
