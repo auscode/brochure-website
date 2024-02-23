@@ -63,15 +63,15 @@ const WorksPage = () => {
         {/* </div> */}
         <div className="flex flex-col items-start justify-start w-[92%] md:px-5 md:w-full">
           <div className="bg-green-A100 sm:h-[580px] h-[646px] md:h-[930px] md:ml-[0] ml-auto p-1 relative rounded-[90px] w-[86%] md:w-full">
-            <div className="flex flex-col md:gap-10 gap-[82px] h-full justify-start m-auto">
+            <div className="absolute top-[25%] flex flex-col md:gap-10 gap-[82px] h-full justify-start m-auto">
               <Text
-                className="md:ml-[0] ml-[285px] sm:text-[40px] md:text-[46px] text-[50px] text-black-900"
+                className="text-center sm:text-[40px] md:text-[46px] text-[50px] text-black-900"
                 size="txtSourceSansProBold50"
               >
-                <span className="text-black-900 font-sourcesanspro text-left font-bold">
+                <span className="text-black-900 font-sourcesanspro text-center font-bold">
                   What we{" "}
                 </span>
-                <span className="text-red-401 font-sourcesanspro text-left font-bold">
+                <span className="text-red-401 font-sourcesanspro text-center font-bold">
                   do
                 </span>
                 <span className="text-black-900 font-sourcesanspro text-left font-bold">
@@ -79,7 +79,7 @@ const WorksPage = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[40.00px] text-center text-gray-700 text-xl w-full"
+                className="leading-[40.00px] text-center text-gray-700 text-2xl w-full px-32"
                 size="txtSourceSansProRegular20Gray700"
               >
                 We have completed many projects from various companies in the
@@ -131,7 +131,7 @@ const WorksPage = () => {
             </div>
             <div className="flex flex-col items-start justify-start w-full">
               <div className="md:h-[496px] h-[527px] relative w-[95%] md:w-full ml-auto">
-                <div className="absolute bg-orange-A200 h-[496px] inset-x-[0] mx-auto rounded-[30px] top-[0] w-full"></div>
+                <div className="absolute bg-orange-A200 h-[505px] inset-x-[0] mx-auto rounded-[30px] top-[0] w-full"></div>
                 <div className="absolute bottom-[0] h-[482px] right-[0] w-[92%] md:w-full">
                   <Img
                     className="absolute h-[482px] inset-y-[0] my-auto object-cover right-[0] w-[73%]"
@@ -157,33 +157,34 @@ const WorksPage = () => {
               </div>
               {/* <div className="md:h-[1034px] h-[580px] sm:h-[680px] mt-[100px] w-[95%] relative md:w-full ml-auto">
                 <div className="absolute bg-indigo-800 h-[580px] inset-y-[0] left-[0] my-auto rounded-[30px] w-full"></div> */}
-              <div className="md:h-[1034px] h-[580px] sm:h-[680px] mt-[100px] relative w-full">
-                <div className="absolute bg-indigo-800 h-[580px] inset-y-[0] left-[0] my-auto rounded-[30px] w-[95%]"></div>
-                <div className="absolute flex md:flex-col flex-row md:gap-10 items-end justify-between right-[0] top-[7%] w-[92%]">
-                  <div className="flex flex-col items-start justify-start md:mt-0 mt-5">
-                    <Text
-                      className="bg-clip-text bg-gradient  sm:text-[31px] md:text-[33px] text-[35px] text-transparent"
-                      size="txtSourceSansProBold35OrangeA200"
-                    >
-                      Floops
-                    </Text>
-                    <Text
-                      className="mt-[193px] sm:text-[31px] md:text-[33px] text-[35px] text-white-A700 w-full"
-                      size="txtSourceSansProBold35"
-                    >
-                      Landing page for Website Service
-                    </Text>
-                    <Line className="bg-white-A700 h-0.5 mt-[68px] w-[24%]" />
+              <div className="md:h-[1034px] h-[580px] sm:h-[680px] mt-[100px] w-[95%] relative md:w-full ml-auto">
+                <div className="absolute bg-indigo-800 h-[580px] inset-y-[0] left-[0] my-auto rounded-[30px] w-full">
+                  <div className="absolute flex md:flex-col flex-row md:gap-10 items-end justify-between right-[0] top-[7%] w-[92%]">
+                    <div className="flex flex-col items-start justify-start md:mt-0 mt-5">
+                      <Text
+                        className="bg-clip-text bg-gradient  sm:text-[31px] md:text-[33px] text-[35px] text-transparent"
+                        size="txtSourceSansProBold35OrangeA200"
+                      >
+                        Floops
+                      </Text>
+                      <Text
+                        className="mt-[193px] sm:text-[31px] md:text-[33px] text-[35px] text-white-A700 w-full"
+                        size="txtSourceSansProBold35"
+                      >
+                        Landing page for Website Service
+                      </Text>
+                      <Line className="bg-white-A700 h-0.5 mt-[68px] w-[24%]" />
+                    </div>
+                    <Img
+                      className="absolute left-[50%] top-[10%] h-[456px] md:h-auto "
+                      src="images/img_group790.png"
+                      alt="group790"
+                    />
                   </div>
-                  <Img
-                    className="h-[456px] md:h-auto object-cover"
-                    src="images/img_group790.png"
-                    alt="group790"
-                  />
                 </div>
               </div>
               <div className="bg-red-A200 h-[580px] md:h-[690px] mt-[110px] relative ml-auto rounded-[30px] w-[95%] md:w-full">
-                <div className="flex flex-col h-full items-start justify-start ml-[101px] my-auto w-[26%]">
+                <div className="flex flex-col h-full items-start justify-start ml-[101px] my-auto w-[26%] pt-28">
                   <div className="flex flex-row gap-4 items-start justify-start w-[58%] md:w-full">
                     <Img
                       className="h-[38px] md:h-auto object-cover w-[31%]"
