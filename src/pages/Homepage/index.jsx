@@ -64,7 +64,7 @@ const HomepagePage = () => {
             <div className="absolute bg-cyan-50 h-[646px] inset-[0] justify-center m-auto rounded-[35px] w-full"></div>
             <div className="absolute h-[473px] inset-y-[0] my-auto right-[0] w-[94%] md:w-full">
               <Img
-                className="absolute h-[473px] inset-y-[0] my-auto object-cover right-[0] w-1/2"
+                className="absolute h-[473px] inset-y-[0] my-auto object-cover object-left right-[0] w-[51%]"
                 src="images/img_group665.png"
                 alt="group665"
               />
@@ -201,36 +201,38 @@ const HomepagePage = () => {
               What we do
             </Text>
             <div className="bg-red-50 flex flex-col items-center justify-start p-28 md:px-10 sm:px-5 rounded-[90px] w-full">
-              <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start mb-1.5 w-[95%] md:w-full">
-                <div className="flex flex-col gap-10 items-start justify-start w-[23%] md:w-full">
-                  <Button
-                    className="flex h-[46px] items-center justify-center w-[46px]"
-                    shape="round"
-                    color="red_300"
-                  >
-                    <Img
-                      className="h-[23px]"
-                      src="images/img_cut.svg"
-                      alt="cut"
-                    />
-                  </Button>
-                  <div className="flex flex-col gap-3 items-start justify-start w-full">
-                    <Text
-                      className="sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
-                      size="txtSourceSansProBold25Black900"
+              <div className="flex md:flex-col flex-row md:gap-5 gap-2 items-center justify-start mb-1.5 w-[95%] md:w-full">
+                <div className="flex flex-col items-start justify-start md:ml-[0] w-1/3 p-[25px] sm:px-5 hover:rounded-[30px] hover:shadow-bs4 hover:bg-white-A700 md:w-full">
+                  <div className="flex flex-col gap-[37px] items-start justify-start mb-2 mt-3 w-[95%] w-[95%] md:w-full">
+                    <Button
+                      className="flex h-[46px] items-center justify-center w-[46px]"
+                      shape="round"
+                      color="red_300"
                     >
-                      UIUX Design
-                    </Text>
-                    <Text
-                      className="leading-[30.00px] text-[15px] text-gray-700 w-full"
-                      size="txtSourceSansProRegular15"
-                    >
-                      We can make your website or application design better with
-                      this service
-                    </Text>
+                      <Img
+                        className="h-[23px]"
+                        src="images/img_cut.svg"
+                        alt="cut"
+                      />
+                    </Button>
+                    <div className="flex flex-col gap-3 items-start justify-start w-full">
+                      <Text
+                        className="sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
+                        size="txtSourceSansProBold25Black900"
+                      >
+                        UI/UX Design
+                      </Text>
+                      <Text
+                        className="leading-[30.00px] text-[15px] text-gray-700 w-full"
+                        size="txtSourceSansProRegular15"
+                      >
+                        We can make your website or application design better
+                        with this service
+                      </Text>
+                    </div>
                   </div>
                 </div>
-                <div className="bg-white-A700 flex flex-col items-start justify-start md:ml-[0] ml-[102px] p-[25px] sm:px-5 rounded-[30px] shadow-bs4 w-[31%] md:w-full">
+                <div className="flex flex-col items-start justify-start md:ml-[0] w-1/3 p-[25px] sm:px-5 md:w-full hover:rounded-[30px] hover:shadow-bs4 hover:bg-white-A700">
                   <div className="flex flex-col gap-[37px] items-start justify-start mb-2 mt-3 w-[95%] md:w-full">
                     <Button
                       className="flex h-[46px] items-center justify-center w-[46px]"
@@ -260,32 +262,34 @@ const HomepagePage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col gap-10 items-start justify-start md:ml-[0] ml-[86px] w-[27%] md:w-full">
-                  <Button
-                    className="flex h-[46px] items-center justify-center w-[46px]"
-                    shape="round"
-                    color="lime_800"
-                  >
-                    <Img
-                      className="h-[23px]"
-                      src="images/img_lightbulb.svg"
-                      alt="lightbulb"
-                    />
-                  </Button>
-                  <div className="flex flex-col gap-3 items-start justify-start w-full">
-                    <Text
-                      className="sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
-                      size="txtSourceSansProBold25Black900"
+                <div className="flex flex-col items-start justify-start md:ml-[0] w-1/3 p-[25px] sm:px-5 hover:rounded-[30px] hover:shadow-bs4 hover:bg-white-A700 md:w-full">
+                  <div className="flex flex-col gap-[37px] items-start justify-start mb-2 mt-3 w-[95%] w-[95%] md:w-full">
+                    <Button
+                      className="flex h-[46px] items-center justify-center w-[46px]"
+                      shape="round"
+                      color="lime_800"
                     >
-                      Branding & Product
-                    </Text>
-                    <Text
-                      className="leading-[30.00px] text-[15px] text-gray-700 w-full"
-                      size="txtSourceSansProRegular15"
-                    >
-                      we can also help you in the affairs of product branding so
-                      that your products can be more riveting
-                    </Text>
+                      <Img
+                        className="h-[23px]"
+                        src="images/img_lightbulb.svg"
+                        alt="lightbulb"
+                      />
+                    </Button>
+                    <div className="flex flex-col gap-3 items-start justify-start w-full">
+                      <Text
+                        className="sm:text-[21px] md:text-[23px] text-[25px] text-black-900"
+                        size="txtSourceSansProBold25Black900"
+                      >
+                        Branding & Product
+                      </Text>
+                      <Text
+                        className="leading-[30.00px] text-[15px] text-gray-700 w-full"
+                        size="txtSourceSansProRegular15"
+                      >
+                        we can also help you in the affairs of product branding
+                        so that your products can be more riveting
+                      </Text>
+                    </div>
                   </div>
                 </div>
               </div>
