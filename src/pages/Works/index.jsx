@@ -26,7 +26,7 @@ const WorksPage = () => {
                 <div></div>
               </div>
             </div>
-            <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-[38%]">
+            <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
               <Text
                 className="common-pointer text-black-900 text-lg"
                 size="txtSourceSansProBold18Black900"

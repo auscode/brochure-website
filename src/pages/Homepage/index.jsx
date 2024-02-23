@@ -25,8 +25,8 @@ const HomepagePage = () => {
                 <div></div>
               </div>
             </div>
-            <div className="flex flex-row sm:hidden items-start justify-between pl-[7px] pt-[7px] w-2/5">
-              <div className="flex flex-col gap-2.5 items-center justify-start ml-[18px]">
+            <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
+              <div className="flex flex-col gap-2.5 items-center justify-start">
                 <Text
                   className="text-lg text-red-401"
                   size="txtSourceSansProBold18"

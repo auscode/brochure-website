@@ -17,7 +17,7 @@ const ContactPage = () => {
       <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-start justify-start mx-auto w-full">
         <div className="flex flex-col items-center w-full">
           <header className="flex items-center justify-center md:px-5 w-full">
-            <div className="flex flex-row md:gap-10 items-center justify-between mx-auto my-[15px] w-[78%]">
+            <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%]">
               <div className="header-row ">
                 <Img
                   className="h-[50px]"
@@ -30,7 +30,7 @@ const ContactPage = () => {
                   <div></div>
                 </div>
               </div>
-              <div className="flex flex-row sm:hidden items-start justify-between pr-[7px] pt-[7px] w-[39%]">
+              <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
                 <Text
                   className="common-pointer text-black-900 text-lg"
                   size="txtSourceSansProBold18Black900"
@@ -52,7 +52,7 @@ const ContactPage = () => {
                 >
                   Works
                 </Text>
-                <div className="flex flex-col gap-2.5 items-center justify-start mr-2.5">
+                <div className="flex flex-col gap-2.5 items-center justify-start">
                   <Text
                     className="text-lg text-red-401"
                     size="txtSourceSansProBold18"
