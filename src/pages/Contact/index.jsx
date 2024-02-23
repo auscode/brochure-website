@@ -94,7 +94,7 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="flex md:flex-col flex-row gap-[41px] items-center justify-end md:ml-[0] ml-[120px] mt-[100px] w-[91%] md:w-full">
-            <div className="bg-white-A700 md:h-[425px] sm:h-[538px] h-[599px] md:mt-0 mt-[15px] p-[70px] md:px-10 sm:px-5 relative rounded-[20px] shadow-bs6 w-[66%] md:w-full">
+            <div className="bg-white-A700 md:h-[425px] sm:h-[538px] h-[599px] md:mt-0 mt-[15px] m-3 p-[70px] md:px-10 sm:px-5 relative rounded-[20px] shadow-bs6 w-[66%] md:w-full">
               <div className="absolute flex flex-col gap-[23px] inset-x-[0] items-center justify-start mx-auto pb-[72px] rounded-[5px] top-[12%] w-3/4">
                 <Input
                   name="Group843"
@@ -105,7 +105,7 @@ const ContactPage = () => {
                 ></Input>
                 <div className="flex flex-col items-center justify-start rounded-[5px] w-full">
                   <div className="flex flex-col gap-[30px] items-center justify-start w-full">
-                    <div className="flex sm:flex-col flex-row gap-[30px] items-center justify-between w-full">
+                    <div className="flex sm:flex-col items-center justify-between w-full">
                       <Input
                         name="Group750"
                         placeholder="Your Name"
@@ -142,7 +142,7 @@ const ContactPage = () => {
                 Send
               </Button>
             </div>
-            <div className="bg-white-A700 flex flex-col items-start justify-center mb-3 p-[33px] sm:px-5 rounded-[20px] shadow-bs6 w-[32%] md:w-full">
+            <div className="bg-white-A700 flex flex-col items-start justify-center m-3 p-[33px] sm:px-5 rounded-[20px] shadow-bs6 w-[32%] md:w-full">
               <div className="flex flex-col gap-[31px] items-center justify-start mb-9 mt-11 w-[90%] md:w-full">
                 <div className="flex flex-col gap-[33px] items-start justify-start w-[98%] md:w-full">
                   <Input
@@ -218,24 +218,24 @@ const ContactPage = () => {
                     </Text>
                     <Line className="bg-gray-200 h-px w-full" />
                   </div>
-                  <div className="flex flex-row gap-[19px] items-center justify-end md:ml-[0] ml-[31px] w-[89%] md:w-full">
+                  <div className="flex flex-row gap-[19px] items-center justify-end md:ml-[0] w-[89%] md:w-full">
                     <Img
-                      className="h-[47px] md:h-auto object-cover w-[47px]"
+                      className="h-[47px] md:h-auto object-cover w-[47px] hover:invert hover:brightness-50"
                       src="images/img_group270.png"
                       alt="Group270"
                     />
                     <Img
-                      className="h-[47px] md:h-auto object-cover w-[47px]"
+                      className="h-[47px] md:h-auto object-cover w-[47px] hover:invert hover:brightness-50"
                       src="images/img_group271.png"
                       alt="Group271"
                     />
                     <Img
-                      className="h-[47px] md:h-auto object-cover w-[47px]"
+                      className="h-[47px] md:h-auto object-cover w-[47px] hover:invert hover:brightness-50"
                       src="images/img_group268.png"
                       alt="Group268"
                     />
                     <Img
-                      className="h-[47px] md:h-auto object-cover w-[47px]"
+                      className="h-[47px] md:h-auto object-cover w-[47px] hover:invert hover:brightness-50"
                       src="images/img_group269.png"
                       alt="Group269"
                     />
