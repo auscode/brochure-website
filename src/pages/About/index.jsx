@@ -65,30 +65,35 @@ const AboutPage = () => {
           <div className="bg-yellow-100 flex flex-col items-center justify-end md:ml-[0] ml-[130px] p-[53px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[19px] w-[88%] md:w-full">
               <div className="flex flex-col md:gap-10 gap-[60px] justify-start w-[10%] md:w-full">
-                <Img
-                  className="h-[89px] md:h-auto rounded-[50%] w-[89px]"
-                  src="images/img_ellipse11.png"
-                  alt="EllipseEleven"
-                />
+                <div className="h-40 w-[180%]">
+                  <Img
+                    className="md:h-auto rounded-[50%] "
+                    src="images/img_ellipse11.png"
+                    alt="EllipseEleven"
+                  />
+                </div>
                 <div className="bg-pink-400 h-3.5 md:ml-[0] ml-[23px] mr-[52px] rounded-[50%] w-3.5"></div>
               </div>
               <div className="flex flex-col justify-start w-[91%] md:w-full">
                 <div className="bg-deep_orange-A100 h-3.5 md:ml-[0] ml-[706px] mr-[134px] rounded-[50%] w-3.5"></div>
                 <div className="md:h-[282px] h-[293px] sm:h-[302px] mt-[53px] relative w-full">
-                  <Img
-                    className="absolute h-[89px] right-[0] rounded-[50%] top-[0] w-[89px]"
-                    src="images/img_ellipse13.png"
-                    alt="EllipseThirteen"
-                  />
-                  <div className="absolute bottom-[0] flex flex-col md:gap-10 gap-[60px] items-center justify-start left-[0]">
+                  <div className=" absolute w-40 top-[0] right-[0]">
+                    <Img
+                      className=" md:h-auto rounded-[50%]  "
+                      src="images/img_ellipse13.png"
+                      alt="EllipseThirteen"
+                    />
+                  </div>
+
+                  <div className="absolute bottom-[0] flex flex-col md:gap-10 gap-[60px] items-center left-[0]">
                     <Text
-                      className="sm:text-[40px] md:text-[46px] text-[50px] text-black-900"
+                      className="sm:text-[40px] md:text-[46px] text-[50px] text-black-900 flex flex-col mr-10"
                       size="txtSourceSansProBold50"
                     >
                       <span className="text-black-900 font-sourcesanspro text-left font-bold">
                         Get to know more{" "}
                       </span>
-                      <span className="text-red-401 font-sourcesanspro text-left font-bold">
+                      <span className="text-red-401 font-sourcesanspro text-center font-bold">
                         about us
                       </span>
                     </Text>
@@ -102,11 +107,13 @@ const AboutPage = () => {
                     </Text>
                   </div>
                 </div>
-                <Img
-                  className="h-[89px] md:h-auto md:ml-[0] ml-[676px] mt-[72px] rounded-[50%] w-[89px]"
-                  src="images/img_ellipse12.png"
-                  alt="EllipseTwelve"
-                />
+                <div className=" md:h-auto md:ml-[0] ml-[676px] mt-[72px] rounded-[50%] w-40">
+                  <Img
+                    className=""
+                    src="images/img_ellipse12.png"
+                    alt="EllipseTwelve"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -135,7 +142,7 @@ const AboutPage = () => {
               </div>
               <div className="flex flex-1 flex-col gap-[42px] items-center justify-start pb-[7px] w-full">
                 <Img
-                  className="h-[460px] sm:h-auto object-cover rounded-bl-[10px] rounded-br-[10px] w-full"
+                  className="h-[460px] sm:h-auto object-cover rounded-[10px] w-full"
                   src="images/img_rectangle15.png"
                   alt="RectangleFifteen"
                 />
@@ -325,12 +332,12 @@ const AboutPage = () => {
               </div>
               <div className="flex md:flex-1 flex-col gap-[30px] items-center justify-start w-[32%] md:w-full">
                 <Img
-                  className="h-[379px] md:h-auto object-cover rounded-bl-[10px] rounded-br-[10px] w-full"
+                  className="h-[379px] md:h-auto object-cover rounded-[10px] w-full"
                   src="images/img_rectangle31.png"
                   alt="RectangleThirtyOne"
                 />
                 <Img
-                  className="h-[205px] md:h-auto object-cover rounded-tl-[10px] rounded-tr-[10px] w-full"
+                  className="h-[205px] md:h-auto object-cover rounded-[10px] w-full"
                   src="images/img_manwearingbla.png"
                   alt="manwearingbla"
                 />
@@ -347,7 +354,7 @@ const AboutPage = () => {
                   alt="womansittingo"
                 />
                 <Img
-                  className="h-[206px] md:h-auto object-cover rounded-tl-[10px] rounded-tr-[10px] w-full"
+                  className="h-[206px] md:h-auto object-cover rounded-[10px] w-full"
                   src="images/img_personholding.png"
                   alt="personholding"
                 />
