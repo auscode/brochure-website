@@ -68,7 +68,7 @@ const HomepagePage = () => {
         {/* mobile nav  */}
         <div className="hidden sm:block w-full ">
           {isMenuOpen && (
-            <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 px-2 justify-between rounded-lg">
+            <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 p-2 justify-between rounded-lg">
               {/* Add your menu items and styles here */}
               <div className="flex flex-col gap-2.5 items-center justify-start">
                 <Text
@@ -113,20 +113,20 @@ const HomepagePage = () => {
           )}
         </div>
         <div className="flex flex-col items-start justify-start w-full">
-          <div className="h-[646px] max-w-[1181px] mx-auto md:px-5 relative w-full">
-            <div className="absolute bg-cyan-50 h-[646px] inset-[0] justify-center m-auto rounded-[35px] w-full"></div>
-            <div className="absolute h-[473px] inset-y-[0] my-auto right-[0] w-[94%] md:w-full">
+          <div className="h-[646px] max-w-[1181px] mx-auto md:px-2 relative w-full">
+            <div className="absolute sm:hidden bg-cyan-50 h-[646px] inset-[0] justify-center m-auto rounded-[35px] w-full"></div>
+            <div className="absolute sm:static h-[473px] inset-y-[0] my-auto right-[0] w-[94%] md:w-full sm:w-full">
               <Img
-                className="absolute h-[473px] inset-y-[0] my-auto object-cover object-left right-[0] w-[51%]"
+                className="absolute sm:static h-[473px] sm:h-[300px] inset-y-[0] my-auto sm:my-0 object-cover sm:object-center object-left right-[0] w-[51%] sm:w-full"
                 src="images/img_group665.png"
                 alt="group665"
               />
-              <div className="absolute flex flex-col items-start justify-start left-[0] rounded-[5px] top-[10%] w-[55%]">
+              <div className="absolute flex flex-col items-start justify-start left-[0] rounded-[5px] top-[10%] sm:ml-4 sm:mt-2 w-[55%] sm:w-full sm:text-center sm:static">
                 <Text
-                  className="leading-[80.00px] md:text-5xl text-[75px] text-black-900 w-full"
+                  className="leading-[80.00px] sm:leading-4 md:text-5xl text-[75px] sm:text-4xl sm:text- text-black-900 w-full"
                   size="txtSourceSansProBold75"
                 >
-                  <span className="text-black-900 font-sourcesanspro text-left font-bold">
+                  <span className="text-black-900 font-sourcesanspro text-left sm:text-center font-bold">
                     Maximize your business with{" "}
                   </span>
                   <span className="text-red-401 font-sourcesanspro text-left font-bold">
@@ -134,13 +134,13 @@ const HomepagePage = () => {
                   </span>
                 </Text>
                 <Text
-                  className="leading-[35.00px] md:ml-[0] ml-[3px] mt-[25px] text-black-900_60 text-xl w-[73%] sm:w-full"
+                  className="leading-[35.00px] md:ml-[0] ml-[3px] mt-[25px] text-black-900_60 text-xl w-[73%]"
                   size="txtSourceSansProRegular20"
                 >
                   Maximize your business with a variety of services and services
                   from us
                 </Text>
-                <div className="flex sm:flex-col flex-row gap-6 items-center justify-start mt-[39px] rounded-[5px] w-[71%] md:w-full">
+                <div className="flex sm:flex-col flex-row gap-6 items-center sm:items-start justify-start mt-[39px] rounded-[5px] w-[71%] sm:w-full md:w-full">
                   <Button
                     className="cursor-pointer font-bold leading-[normal] min-w-[201px] rounded-[5px] text-base text-center"
                     color="black_900"
@@ -162,7 +162,7 @@ const HomepagePage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-10 items-center justify-start max-w-[1181px] mt-[100px] mx-auto md:px-5 w-full">
+          <div className="flex flex-col gap-10 items-center justify-start max-w-[1181px] mt-[100px] sm:mt-[150px] mx-auto md:px-5 w-full">
             <div className="flex flex-row md:gap-10 items-center justify-between w-full">
               <Text
                 className="sm:text-4xl md:text-[38px] text-[40px] text-black-900"
@@ -253,7 +253,7 @@ const HomepagePage = () => {
             >
               What we do
             </Text>
-            <div className="bg-red-50 flex flex-col items-center justify-start p-28 md:px-10 sm:px-5 rounded-[90px] w-full">
+            <div className="bg-red-50 flex flex-col items-center justify-start p-28 sm:p-14 md:px-10 sm:px-5 rounded-[90px] sm:rounded-lg w-full">
               <div className="flex md:flex-col flex-row md:gap-5 gap-2 items-center justify-start mb-1.5 w-[95%] md:w-full">
                 <div className="flex flex-col items-start justify-start md:ml-[0] w-1/3 p-[25px] sm:px-5 hover:rounded-[30px] hover:shadow-bs4 hover:bg-white-A700 md:w-full">
                   <div className="flex flex-col gap-[37px] items-start justify-start mb-2 mt-3 w-[95%] w-[95%] md:w-full">
@@ -348,12 +348,12 @@ const HomepagePage = () => {
               </div>
             </div>
           </div>
-          <div className="sm:h-[1269px] h-[559px] md:h-[997px] mt-[100px] md:px-5 relative w-full">
+          <div className="sm:h-[1200px] h-[559px] md:h-[997px] mt-[100px] md:px-5 relative w-full">
             <div
-              className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col h-[525px] inset-x-[0] items-center justify-end mx-auto p-[50px] md:px-10 sm:px-5 w-full"
+              className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col h-[525px] sm:h-[73em] inset-x-[0] items-center justify-end mx-auto p-[50px] sm:p md:px-10 sm:px-5 w-full"
               style={{ backgroundImage: "url('images/img_group839.png')" }}
             >
-              <div className="flex flex-col items-center justify-start mt-[22px] w-[89%] md:w-full">
+              <div className="flex flex-col items-center justify-start mt-[22px] sm:mt-[100px] w-[89%] md:w-full">
                 <div className="flex flex-col md:gap-10 gap-[68px] items-center justify-start w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
                     <Text
@@ -362,7 +362,7 @@ const HomepagePage = () => {
                     >
                       What our clients are saying
                     </Text>
-                    <div className="flex md:flex-1 flex-row gap-[9px] items-center justify-between w-[13%] md:w-full">
+                    <div className="flex sm:hidden md:flex-1 flex-row gap-[9px] items-center justify-between w-[13%] md:w-full">
                       <Button
                         className="flex items-center justify-center px-5 rounded-md"
                         shape="square"
@@ -488,7 +488,7 @@ const HomepagePage = () => {
               </div>
             </div>
             <Button
-              className="absolute border-[9px] border-solid border-white-A700 flex h-[68px] items-center justify-center left-[9%] top-[0] w-[68px]"
+              className="absolute border-[9px] border-solid border-white-A700 flex h-[68px] items-center justify-center left-[9%] sm:left-[4%] top-[0] w-[68px]"
               shape="circle"
               size="md"
             >
