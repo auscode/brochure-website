@@ -16,7 +16,7 @@ const HomepagePage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-center justify-start mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-center justify-start mx-auto w-full overflow-hidden">
         <header className="flex items-center justify-center sm:px-0 w-full">
           <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
             <div className="header-row ">
@@ -495,7 +495,7 @@ const HomepagePage = () => {
               <Img src="images/img_settings_68X68.svg" alt="settings One" />
             </Button>
           </div>
-          <Footer className="bg-gray-801 flex items-center justify-center mt-[70px] md:px-5 rounded-tr-[50px] w-[91%] py-5" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[70px] md:px-5 sm:px-0 rounded-tr-[50px] sm:rounded-tr-none w-[91%] sm:w-full py-5 sm:py-0" />
         </div>
       </div>
     </>

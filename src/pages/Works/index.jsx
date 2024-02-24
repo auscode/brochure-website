@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Img, Line, Text } from "components";
-import Footer1 from "components/Footer1";
+import Footer from "components/Footer";
 
 const WorksPage = () => {
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ const WorksPage = () => {
           </div>
         </header>
         {/* </div> */}
-        <div className="flex flex-col items-start justify-start w-[92%] md:px-5 md:w-full">
+        <div className="flex flex-col items-start justify-start w-[92%] md:px-5 sm:px-0 md:w-full">
           <div className="bg-green-A100 sm:h-[580px] h-[646px] md:h-[930px] md:ml-[0] ml-auto p-1 relative rounded-[90px] w-[86%] md:w-full">
             <div className="absolute top-[25%] flex flex-col md:gap-10 gap-[82px] h-full justify-start m-auto">
               <Text
@@ -222,7 +222,7 @@ const WorksPage = () => {
               </div>
             </div>
           </div>
-          <Footer1 className="bg-gray-801 flex items-center justify-center mt-[110px] rounded-tr-[50px] w-full py-5" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[110px] rounded-tr-[50px] sm:rounded-tr-none w-full py-5" />
         </div>
       </div>
     </>

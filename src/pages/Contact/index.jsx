@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Input, Line, Text, TextArea } from "components";
-import Footer1 from "components/Footer1";
+import Footer from "components/Footer";
 
 const ContactPage = () => {
   const navigate = useNavigate();
@@ -65,7 +65,7 @@ const ContactPage = () => {
             </div>
           </header>
         </div>
-        <div className="flex flex-col items-start justify-start md:px-5 w-[92%] md:w-full">
+        <div className="flex flex-col items-start justify-start md:px-5 w-[92%] sm:px-0 md:w-full">
           <div className="bg-blue-50 flex flex-col items-center justify-start md:ml-[0] ml-[121px] p-[51px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div
               className="bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[76px] h-[480px] items-center justify-end mb-[65px] mt-[65px] p-[72px] md:px-10 sm:px-5"
@@ -244,7 +244,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <Footer1 className="bg-gray-801 flex items-center justify-center mt-[108px] rounded-tr-[50px] w-full py-5" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[108px] rounded-tr-[50px] sm:rounded-tr-none w-full py-5 sm:py-0" />
         </div>
       </div>
     </>

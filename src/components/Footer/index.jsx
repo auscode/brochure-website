@@ -7,7 +7,7 @@ const Footer = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <div className="flex md:flex-col flex-row md:gap-5 items-center justify-center ml-[149px] mr-[47px] mt-[66px] w-[86%]">
+        <div className="flex md:flex-col flex-row md:gap-5 items-center justify-center ml-[149px] sm:ml-5 mr-[47px] mt-[66px] sm:mt-5 w-[86%]">
           <div className="flex flex-col gap-[7px] items-start justify-start w-[77%] md:w-full">
             <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-[91%] md:w-full">
               <div className="flex flex-row gap-3 items-center justify-start w-[19%] sm:w-full">
@@ -103,14 +103,14 @@ const Footer = (props) => {
               </div>
             </div>
             <Text
-              className="text-[15px] text-white-A700"
+              className="text-[15px] sm:mt-10 sm: text-white-A700"
               size="txtSourceSansProBold15"
             >
               Brochure Brand - All Rights Reserved
             </Text>
           </div>
           <Img
-            className="h-[311px] md:mt-0 mt-[120px] w-[24%]"
+            className="h-[311px] md:mt-0 mt-[120px] w-[24%] sm:w-[60%]"
             src="images/img_group710.svg"
             alt="Group710"
           />

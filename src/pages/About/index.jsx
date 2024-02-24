@@ -61,7 +61,7 @@ const AboutPage = () => {
             </div>
           </header>
         </div>
-        <div className="flex flex-col items-start justify-start md:px-5 w-[91%] md:w-full">
+        <div className="flex flex-col items-start justify-start md:px-5 sm:px-0 w-[91%] md:w-full">
           <div className="bg-yellow-100 flex flex-col items-center justify-end md:ml-[0] ml-[130px] p-[53px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[19px] w-[88%] md:w-full">
               <div className="flex flex-col md:gap-10 gap-[60px] justify-start w-[10%] md:w-full">
@@ -361,7 +361,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          <Footer className="bg-gray-801 flex items-center justify-center mt-[120px] rounded-tr-[50px] w-full py-5" />
+          <Footer className="bg-gray-801 flex items-center justify-center mt-[120px] rounded-tr-[50px] sm:rounded-tr-none w-full py-5 sm:py-0" />
         </div>
       </div>
     </>
