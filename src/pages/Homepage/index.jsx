@@ -1,25 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Line, List, Text } from "components";
+import { Button, Img, List, Text } from "components";
 import Footer from "components/Footer";
 
 const HomepagePage = () => {
   const navigate = useNavigate();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-center justify-start mx-auto w-full">
-        <header className="flex items-center justify-center md:px-5 w-full">
-          <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%]">
+      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-center justify-start mx-auto w-full">
+        <header className="flex items-center justify-center sm:px-0 w-full">
+          <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
             <div className="header-row ">
               <Img
-                className="h-[50px]"
+                className="h-[50px] sm:h-[40px]"
                 src="images/img_group642.svg"
                 alt="Group642"
               />
-              <div className="mobile-menu">
+              <div className="mobile-menu" onClick={handleMenuToggle}>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -59,6 +65,53 @@ const HomepagePage = () => {
             </div>
           </div>
         </header>
+        {/* mobile nav  */}
+        <div className="hidden sm:block w-full ">
+          {isMenuOpen && (
+            <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 px-2 justify-between rounded-lg">
+              {/* Add your menu items and styles here */}
+              <div className="flex flex-col gap-2.5 items-center justify-start">
+                <Text
+                  className="text-lg text-red-401"
+                  size="txtSourceSansProBold18"
+                >
+                  Home
+                </Text>
+                <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
+              </div>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/about");
+                }}
+              >
+                About
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/works");
+                }}
+              >
+                Works
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/contact");
+                }}
+              >
+                Contact
+              </Text>
+            </div>
+          )}
+        </div>
         <div className="flex flex-col items-start justify-start w-full">
           <div className="h-[646px] max-w-[1181px] mx-auto md:px-5 relative w-full">
             <div className="absolute bg-cyan-50 h-[646px] inset-[0] justify-center m-auto rounded-[35px] w-full"></div>
