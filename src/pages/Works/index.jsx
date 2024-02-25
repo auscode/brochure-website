@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
@@ -8,19 +8,25 @@ import Footer from "components/Footer";
 const WorksPage = () => {
   const navigate = useNavigate();
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-start justify-start mx-auto w-full">
         {/* <div className="flex flex-col items-center w-full"> */}
-        <header className="flex items-center justify-center md:px-5 w-full">
-          <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%]">
+        <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
+          <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
             <div className="header-row ">
               <Img
-                className="h-[50px]"
+                className="h-[50px] sm:h-[40px]"
                 src="images/img_group642.svg"
                 alt="Group645"
               />
-              <div className="mobile-menu">
+              <div className="mobile-menu" onClick={handleMenuToggle}>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -60,6 +66,53 @@ const WorksPage = () => {
             </div>
           </div>
         </header>
+        {/* mobile nav  */}
+        <div className="hidden sm:block w-full ">
+          {isMenuOpen && (
+            <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 p-2 justify-between rounded-lg">
+              {/* Add your menu items and styles here */}
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/");
+                }}
+              >
+                Home
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/about");
+                }}
+              >
+                About
+              </Text>
+              <div className="flex flex-col gap-[11px] items-center justify-start">
+                <Text
+                  className="text-lg text-red-401"
+                  size="txtSourceSansProBold18"
+                >
+                  Works
+                </Text>
+                <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
+              </div>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/contact");
+                }}
+              >
+                Contact
+              </Text>
+            </div>
+          )}
+        </div>
         {/* </div> */}
         <div className="flex flex-col items-start justify-start w-[92%] md:px-5 sm:px-0 md:w-full">
           <div className="bg-green-A100 sm:h-[580px] h-[646px] md:h-[930px] md:ml-[0] ml-auto p-1 relative rounded-[90px] w-[86%] md:w-full">
