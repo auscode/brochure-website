@@ -11,6 +11,7 @@ const WorksPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
+    console.log("handleMenuToggle");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -140,7 +141,7 @@ const WorksPage = () => {
                 with the results we have provided
               </Text>
             </div>
-            <div className="absolute bottom-[1%] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[96%]">
+            <div className="absolute sm:static bottom-[1%] flex flex-col inset-x-[0] items-center justify-start mx-auto w-[96%]">
               <div className="flex flex-col justify-start w-full">
                 <div className="flex flex-row sm:gap-10 gap-[767px] items-start justify-start w-4/5 md:w-full">
                   <Img
