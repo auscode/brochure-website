@@ -16,8 +16,8 @@ const AboutPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-start justify-start mx-auto w-full">
-        <div className="flex flex-col items-center w-full">
+      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-start justify-start mx-auto w-full">
+        {/* <div className="flex flex-col items-center w-full"> */}
           <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
             <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
               <div className="header-row ">
@@ -113,12 +113,12 @@ const AboutPage = () => {
               </div>
             )}
           </div>
-        </div>
-        <div className="flex flex-col items-start justify-start md:px-5 sm:px-0 w-[91%] md:w-full">
+        {/* </div> */}
+        <div className="flex flex-col items-start justify-start md:px-5 sm:px-0 w-[91%] md:w-full sm:bg-blue-300 ">
           <div className="bg-yellow-100 flex flex-col items-center justify-end md:ml-[0] ml-[130px] p-[53px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[19px] w-[88%] md:w-full">
               <div className="flex flex-col md:gap-10 gap-[60px] justify-start w-[10%] md:w-full">
-                <div className="h-40 w-[180%]">
+                <div className="h-40 w-[180%] sm:w-[50%]">
                   <Img
                     className="md:h-auto rounded-[50%] "
                     src="images/img_ellipse11.png"
@@ -140,13 +140,13 @@ const AboutPage = () => {
 
                   <div className="absolute bottom-[0] flex flex-col md:gap-10 gap-[60px] items-center left-[0]">
                     <Text
-                      className="sm:text-[40px] md:text-[46px] text-[50px] text-black-900 flex flex-col mr-10"
+                      className="sm:text-[35px] sm:items-center sm:justify-center md:text-[46px] text-[50px] text-black-900 flex flex-col mr-10 sm:mr-0"
                       size="txtSourceSansProBold50"
                     >
-                      <span className="text-black-900 font-sourcesanspro text-left font-bold">
+                      <span className="text-black-900 font-sourcesanspro text-left font-bold sm:font-semibold">
                         Get to know more{" "}
                       </span>
-                      <span className="text-red-401 font-sourcesanspro text-center font-bold">
+                      <span className="text-red-401 font-sourcesanspro text-center font-bold sm:font-semibold">
                         about us
                       </span>
                     </Text>

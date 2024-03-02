@@ -21,103 +21,103 @@ const ContactPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-start justify-start mx-auto w-full overflow-hidden">
-        <div className="flex flex-col items-center w-full">
-          <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
-            <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
-              <div className="header-row ">
-                <Img
-                  className="h-[50px] sm:h-[40px]"
-                  src="images/img_group642.svg"
-                  alt="Group645"
-                />
-                <div className="mobile-menu" onClick={handleMenuToggle}>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-              <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => navigate("/")}
-                >
-                  Home
-                </Text>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => navigate("/about")}
-                >
-                  About
-                </Text>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => navigate("/works")}
-                >
-                  Works
-                </Text>
-                <div className="flex flex-col gap-2.5 items-center justify-start">
-                  <Text
-                    className="text-lg text-red-401"
-                    size="txtSourceSansProBold18"
-                  >
-                    Contact
-                  </Text>
-                  <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
-                </div>
+        {/* <div className="flex flex-col items-center w-full"> */}
+        <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
+          <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
+            <div className="header-row ">
+              <Img
+                className="h-[50px] sm:h-[40px]"
+                src="images/img_group642.svg"
+                alt="Group645"
+              />
+              <div className="mobile-menu" onClick={handleMenuToggle}>
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
             </div>
-          </header>
-          {/* mobile nav  */}
-          <div className="hidden sm:block w-full ">
-            {isMenuOpen && (
-              <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 p-2 justify-between rounded-lg">
-                {/* Add your menu items and styles here */}
+            <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => navigate("/")}
+              >
+                Home
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => navigate("/about")}
+              >
+                About
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => navigate("/works")}
+              >
+                Works
+              </Text>
+              <div className="flex flex-col gap-2.5 items-center justify-start">
                 <Text
-                  className="common-pointer text-black-900 text-lg"
+                  className="text-lg text-red-401"
                   size="txtSourceSansProBold18"
-                  onClick={() => {
-                    handleMenuToggle();
-                    navigate("/");
-                  }}
                 >
-                  Home
+                  Contact
                 </Text>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => {
-                    handleMenuToggle();
-                    navigate("/about");
-                  }}
-                >
-                  About
-                </Text>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => {
-                    handleMenuToggle();
-                    navigate("/works");
-                  }}
-                >
-                  Works
-                </Text>
-                <div className="flex flex-col gap-2.5 items-center justify-start">
-                  <Text
-                    className="text-lg text-red-401"
-                    size="txtSourceSansProBold18"
-                  >
-                    Contact
-                  </Text>
-                  <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
-                </div>
+                <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
               </div>
-            )}
+            </div>
           </div>
+        </header>
+        {/* mobile nav  */}
+        <div className="hidden sm:block w-full ">
+          {isMenuOpen && (
+            <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 p-2 justify-between rounded-lg">
+              {/* Add your menu items and styles here */}
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/");
+                }}
+              >
+                Home
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/about");
+                }}
+              >
+                About
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/works");
+                }}
+              >
+                Works
+              </Text>
+              <div className="flex flex-col gap-2.5 items-center justify-start">
+                <Text
+                  className="text-lg text-red-401"
+                  size="txtSourceSansProBold18"
+                >
+                  Contact
+                </Text>
+                <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
+              </div>
+            </div>
+          )}
         </div>
+        {/* </div> */}
         <div className="flex flex-col items-start justify-start md:px-5 w-[92%] sm:px-0 md:w-full">
           <div className="bg-blue-50 flex flex-col items-center justify-start md:ml-[0] ml-[121px] p-[51px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div

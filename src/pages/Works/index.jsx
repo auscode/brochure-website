@@ -11,13 +11,13 @@ const WorksPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
-    console.log("handleMenuToggle");
+    // console.log("handleMenuToggle");
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] items-start justify-start mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-start justify-start mx-auto w-full">
         {/* <div className="flex flex-col items-center w-full"> */}
         <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
           <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
