@@ -18,106 +18,106 @@ const AboutPage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-sourcesanspro gap-[54px] sm:gap-5 items-start justify-start mx-auto w-full">
         {/* <div className="flex flex-col items-center w-full"> */}
-          <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
-            <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
-              <div className="header-row ">
-                <Img
-                  className="h-[50px] sm:h-[40px]"
-                  src="images/img_group642.svg"
-                  alt="Group645"
-                />
-                <div className="mobile-menu" onClick={handleMenuToggle}>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
-              <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => navigate("/")}
-                >
-                  Home
-                </Text>
-                <div className="flex flex-col gap-[11px] items-center justify-start">
-                  <Text
-                    className="text-lg text-red-401"
-                    size="txtSourceSansProBold18"
-                  >
-                    About
-                  </Text>
-                  <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
-                </div>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => navigate("/works")}
-                >
-                  Works
-                </Text>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => navigate("/contact")}
-                >
-                  Contact
-                </Text>
+        <header className="flex items-center justify-center md:px-5 sm:px-0 w-full">
+          <div className="flex flex-row md:gap-10 items-center justify-between ml-[164px] mr-[181px] my-[15px] w-[76%] sm:ml-0 sm:mr-0 sm:my-1 sm:w-[90%] ">
+            <div className="header-row ">
+              <Img
+                className="h-[50px] sm:h-[40px]"
+                src="images/img_group642.svg"
+                alt="Group645"
+              />
+              <div className="mobile-menu" onClick={handleMenuToggle}>
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
             </div>
-          </header>
-          {/* mobile nav  */}
-          <div className="hidden sm:block w-full ">
-            {isMenuOpen && (
-              <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 p-2 justify-between rounded-lg">
-                {/* Add your menu items and styles here */}
+            <div className="flex flex-row sm:hidden items-start justify-between pt-[7px] w-2/5">
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => navigate("/")}
+              >
+                Home
+              </Text>
+              <div className="flex flex-col gap-[11px] items-center justify-start">
                 <Text
-                  className="common-pointer text-black-900 text-lg"
+                  className="text-lg text-red-401"
                   size="txtSourceSansProBold18"
-                  onClick={() => {
-                    handleMenuToggle();
-                    navigate("/");
-                  }}
                 >
-                  Home
+                  About
                 </Text>
-                <div className="flex flex-col gap-[11px] items-center justify-start">
-                  <Text
-                    className="text-lg text-red-401"
-                    size="txtSourceSansProBold18"
-                  >
-                    About
-                  </Text>
-                  <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
-                </div>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => {
-                    handleMenuToggle();
-                    navigate("/works");
-                  }}
-                >
-                  Works
-                </Text>
-                <Text
-                  className="common-pointer text-black-900 text-lg"
-                  size="txtSourceSansProBold18Black900"
-                  onClick={() => {
-                    handleMenuToggle();
-                    navigate("/contact");
-                  }}
-                >
-                  Contact
-                </Text>
+                <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
               </div>
-            )}
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => navigate("/works")}
+              >
+                Works
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => navigate("/contact")}
+              >
+                Contact
+              </Text>
+            </div>
           </div>
+        </header>
+        {/* mobile nav  */}
+        <div className="hidden sm:block w-full ">
+          {isMenuOpen && (
+            <div className="mobile-menu-content gap-2.5 flex flex-row m-0 bg-gray-200 p-2 justify-between rounded-lg">
+              {/* Add your menu items and styles here */}
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/");
+                }}
+              >
+                Home
+              </Text>
+              <div className="flex flex-col gap-[11px] items-center justify-start">
+                <Text
+                  className="text-lg text-red-401"
+                  size="txtSourceSansProBold18"
+                >
+                  About
+                </Text>
+                <div className="bg-red-401 h-1.5 rounded-[50%] w-1.5"></div>
+              </div>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/works");
+                }}
+              >
+                Works
+              </Text>
+              <Text
+                className="common-pointer text-black-900 text-lg"
+                size="txtSourceSansProBold18Black900"
+                onClick={() => {
+                  handleMenuToggle();
+                  navigate("/contact");
+                }}
+              >
+                Contact
+              </Text>
+            </div>
+          )}
+        </div>
         {/* </div> */}
-        <div className="flex flex-col items-start justify-start md:px-5 sm:px-0 w-[91%] md:w-full sm:bg-blue-300 ">
+        <div className="flex flex-col items-start justify-start md:px-5 sm:px-0 w-[91%] md:w-full  ">
           <div className="bg-yellow-100 flex flex-col items-center justify-end md:ml-[0] ml-[130px] p-[53px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
             <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[19px] w-[88%] md:w-full">
-              <div className="flex flex-col md:gap-10 gap-[60px] justify-start w-[10%] md:w-full">
+              <div className="flex flex-col md:gap-10 gap-[60px] justify-start w-[10%] md:w-full sm:hidden">
                 <div className="h-40 w-[180%] sm:w-[50%]">
                   <Img
                     className="md:h-auto rounded-[50%] "
@@ -128,9 +128,9 @@ const AboutPage = () => {
                 <div className="bg-pink-400 h-3.5 md:ml-[0] ml-[23px] mr-[52px] rounded-[50%] w-3.5"></div>
               </div>
               <div className="flex flex-col justify-start w-[91%] md:w-full">
-                <div className="bg-deep_orange-A100 h-3.5 md:ml-[0] ml-[706px] mr-[134px] rounded-[50%] w-3.5"></div>
+                <div className="bg-deep_orange-A100 h-3.5 md:ml-[0] ml-[706px] mr-[134px] rounded-[50%] w-3.5 sm:hidden"></div>
                 <div className="md:h-[282px] h-[293px] sm:h-[302px] mt-[53px] relative w-full">
-                  <div className=" absolute w-40 top-[0] right-[0]">
+                  <div className=" absolute w-40 top-[0] right-[0] sm:hidden">
                     <Img
                       className=" md:h-auto rounded-[50%]  "
                       src="images/img_ellipse13.png"
@@ -160,7 +160,7 @@ const AboutPage = () => {
                     </Text>
                   </div>
                 </div>
-                <div className=" md:h-auto md:ml-[0] ml-[676px] mt-[72px] rounded-[50%] w-40">
+                <div className=" md:h-auto md:ml-[0] ml-[676px] mt-[72px] rounded-[50%] w-40 sm:hidden">
                   <Img
                     className=""
                     src="images/img_ellipse12.png"
@@ -170,7 +170,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-start md:ml-[0] ml-[130px] mt-[100px] w-[91%] md:w-full">
+          <div className="flex flex-col items-center justify-start md:ml-[0] ml-[130px] mt-[100px] w-[91%] sm:px-2 md:w-full">
             <div className="md:gap-5 gap-[30px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
               <div className="flex flex-1 flex-col gap-[42px] items-center justify-start pb-[7px] rounded-[10px] w-full">
                 <Img
@@ -363,7 +363,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:gap-10 gap-[70px] items-start justify-start md:ml-[0] ml-[130px] mt-[100px] w-[91%] md:w-full">
+          <div className="flex flex-col md:gap-10 gap-[70px] items-start justify-start md:ml-[0] ml-[130px] mt-[100px] w-[91%] sm:px-2 md:w-full">
             <Text
               className="sm:text-4xl md:text-[38px] text-[40px] text-black-900"
               size="txtSourceSansProBold40"
