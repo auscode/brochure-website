@@ -119,11 +119,8 @@ const ContactPage = () => {
         </div>
         {/* </div> */}
         <div className="flex flex-col items-start justify-start md:px-5 w-[92%] sm:px-0 md:w-full">
-          <div className="bg-blue-50 flex flex-col items-center justify-start md:ml-[0] ml-[121px] p-[51px] md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
-            <div
-              className="bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[76px] h-[480px] items-center justify-end mb-[65px] mt-[65px] p-[72px] md:px-10 sm:px-5"
-              style={{ backgroundImage: "url('images/img_group744.svg')" }}
-            >
+          <div className="bg-blue-50 flex flex-col items-center justify-start md:ml-[0] ml-[121px] p-[51px] sm:p-1 md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
+            <div className="bg-[url('images/img_group744.svg')] sm:bg-none bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[76px] h-[480px] items-center justify-end mb-[65px] sm:m-0 mt-[65px] p-[72px] md:px-10 sm:px-5">
               <Text
                 className="mt-1 sm:text-[40px] md:text-[46px] text-[50px] text-black-900"
                 size="txtSourceSansProBold50"
@@ -136,7 +133,7 @@ const ContactPage = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[40.00px] text-center text-gray-700 text-xl w-[86%] sm:w-full mb-20"
+                className="leading-[40.00px] text-center text-gray-700 text-xl w-[86%] sm:w-full mb-20 sm:mb-0"
                 size="txtSourceSansProRegular20Gray700"
               >
                 Stay connected with us, we will help you with your various
@@ -148,7 +145,7 @@ const ContactPage = () => {
           </div>
           <div className="flex md:flex-col flex-row gap-[41px] items-center justify-end md:ml-[0] ml-[120px] mt-[100px] w-[91%] md:w-full">
             <div className="bg-white-A700 md:h-[425px] sm:h-[538px] h-[599px] md:mt-0 mt-[15px] m-3 p-[70px] md:px-10 sm:px-5 relative rounded-[20px] shadow-bs6 w-[66%] md:w-full">
-              <div className="absolute flex flex-col gap-[23px] inset-x-[0] items-center justify-start mx-auto pb-[72px] rounded-[5px] top-[12%] w-3/4">
+              <div className="absolute flex flex-col gap-[23px] inset-x-[0] items-center sm:items-start justify-start mx-auto  pb-[72px] sm:pb-0 rounded-[5px] top-[12%] w-3/4">
                 <Input
                   name="Group843"
                   placeholder="Send Message"
@@ -157,12 +154,12 @@ const ContactPage = () => {
                   size="xs"
                 ></Input>
                 <div className="flex flex-col items-center justify-start rounded-[5px] w-full">
-                  <div className="flex flex-col gap-[30px] items-center justify-start w-full">
-                    <div className="flex sm:flex-col items-center justify-between w-full">
+                  <div className="flex flex-col gap-[30px] sm:gap-4 items-center justify-start w-full">
+                    <div className="flex sm:flex-col items-center sm:gap-4 justify-between w-full">
                       <Input
                         name="Group750"
                         placeholder="Your Name"
-                        className="font-bold leading-[normal] p-0 placeholder:text-gray-400 text-base text-left w-full"
+                        className="font-bold leading-[normal] p-0 placeholder:text-gray-400 text-base text-left"
                         wrapClassName="sm:flex-1 sm:w-full"
                         type="text"
                         shape="round"
@@ -172,7 +169,7 @@ const ContactPage = () => {
                       <Input
                         name="Group751"
                         placeholder="Your Email"
-                        className="font-bold leading-[normal] p-0 placeholder:text-gray-400 text-base text-left w-full"
+                        className="font-bold leading-[normal] p-0 placeholder:text-gray-400 text-base text-left"
                         wrapClassName="sm:flex-1 sm:w-full"
                         type="email"
                         shape="round"
@@ -187,13 +184,13 @@ const ContactPage = () => {
                     ></TextArea>
                   </div>
                 </div>
+                <Button
+                  className="absolute sm:static bottom-[-15%] cursor-pointer leading-[normal] left-[1%] min-w-[182px] rounded-[25px] text-center text-xl"
+                  color="green_600"
+                >
+                  Send
+                </Button>
               </div>
-              <Button
-                className="absolute bottom-[17%] cursor-pointer leading-[normal] left-[14%] min-w-[182px] rounded-[25px] text-center text-xl"
-                color="green_600"
-              >
-                Send
-              </Button>
             </div>
             <div className="bg-white-A700 flex flex-col items-start justify-center m-3 p-[33px] sm:px-5 rounded-[20px] shadow-bs6 w-[32%] md:w-full">
               <div className="flex flex-col gap-[31px] items-center justify-start mb-9 mt-11 w-[90%] md:w-full">
