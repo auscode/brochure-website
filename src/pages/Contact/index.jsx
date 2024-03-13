@@ -120,9 +120,9 @@ const ContactPage = () => {
         {/* </div> */}
         <div className="flex flex-col items-start justify-start md:px-5 w-[92%] sm:px-0 md:w-full">
           <div className="bg-blue-50 flex flex-col items-center justify-start md:ml-[0] ml-[121px] p-[51px] sm:p-1 md:px-10 sm:px-5 rounded-[90px] w-[91%] md:w-full">
-            <div className="bg-[url('images/img_group744.svg')] sm:bg-none bg-cover bg-no-repeat flex flex-col md:gap-10 gap-[76px] h-[480px] items-center justify-end mb-[65px] sm:m-0 mt-[65px] p-[72px] md:px-10 sm:px-5">
+            <div className="bg-[url('images/img_group744.svg')] sm:bg-none bg-cover bg-no-repeat flex flex-col md:gap-10 sm:gap-[10px] gap-[76px] h-[480px] items-center justify-end mb-[65px] sm:m-0 sm:mt-[120px] mt-[65px] p-[72px] md:px-10 sm:px-5">
               <Text
-                className="mt-1 sm:text-[40px] md:text-[46px] text-[50px] text-black-900"
+                className="mt-1 sm:text-[40px] md:text-[46px] text-[50px] text-black-900 sm:text-center"
                 size="txtSourceSansProBold50"
               >
                 <span className="text-black-900 font-sourcesanspro text-left font-bold">
